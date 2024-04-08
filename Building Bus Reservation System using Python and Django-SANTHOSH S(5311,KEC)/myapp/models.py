@@ -5,8 +5,8 @@ from django.db import models
 # Create your models here.
 
 class Bus(models.Model):
-    bus_name = models.CharField(max_length=30)
-    source = models.CharField(max_length=30)
+    bus_name = models.CharField(max_length=50)
+    source = models.CharField(max_length=50)
     dest = models.CharField(max_length=30)
     nos = models.DecimalField(decimal_places=0, max_digits=2)
     rem = models.DecimalField(decimal_places=0, max_digits=2)
